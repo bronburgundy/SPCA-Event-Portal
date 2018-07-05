@@ -10,6 +10,5 @@ export const Banner = () => {
         <button id='banner-button' type='button'>Contacts</button>
       </div>
     </div>
-    
   )
 }

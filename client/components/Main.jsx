@@ -1,7 +1,7 @@
 import React from 'react'
 import {getAll} from '../apiClient'
 
-class App extends React.Component {
+class Main extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -23,7 +23,7 @@ class App extends React.Component {
           <h3>Volunteers</h3>
           <ul>
             {this.state.volunteers.map(volunteer => {
-              return <li key={volunteer.id}>{volunteer}</li>
+              return <li key={volunteer.id}>{volunteer.first_name} {volunteer.last_name} {volunteer.phone} {volunteer.email} {volunteer.dob} {volunteer.gender}</li>
             })}
           </ul>
         </div>
@@ -31,3 +31,5 @@ class App extends React.Component {
     )
   }
 }
+
+export default Main
