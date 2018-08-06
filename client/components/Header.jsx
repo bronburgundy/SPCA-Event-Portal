@@ -11,6 +11,7 @@ export const Header = () => {
       </div>
       <div className='navbar'>
         <ul>
+          <a href='#'><li>Events</li></a>
           <a href='#'><li>Volunteers</li></a>
           <a href='#'><li>Roster</li></a>
           <a href='#'><li>Contact</li></a>

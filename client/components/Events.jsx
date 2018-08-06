@@ -1,18 +1,18 @@
 import React from 'react'
-import {getVolunteers} from '../apiClient'
+import {getEvents} from '../apiClient'
 
 class Volunteers extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      volunteers: []
+      events: []
     }
   }
 
   componentDidMount () {
-    getVolunteers()
-      .then(volunteers => {
-        this.setState({volunteers})
+    getEvents()
+      .then(events => {
+        this.setState({events})
       })
   }
 
@@ -20,7 +20,7 @@ class Volunteers extends React.Component {
     return (
       <div className='main'>
         <div className='main-content'>
-          <h3>Volunteers</h3>
+          <h3>Events</h3>
           <ul>
             {this.state.volunteers.map(volunteer => {
               return <li key={volunteer.id}>{volunteer.first_name} {volunteer.last_name} {volunteer.phone} {volunteer.email} {volunteer.dob} {volunteer.gender}</li>

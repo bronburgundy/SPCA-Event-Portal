@@ -1,8 +1,8 @@
 import request from 'superagent'
 
-export const getAll = () => {
+export const getEvents = () => {
   return request
-    .get('/api/v1/volunteers')
+    .get('/api/v1/events')
     .then(res => {
       return res.body
     })
