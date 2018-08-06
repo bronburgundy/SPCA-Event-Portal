@@ -1,25 +1,25 @@
 import React from 'react'
-import {getEvents} from '../apiClient'
+import {getEvent} from '../apiClient'
 
-class Events extends React.Component {
+class Event extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      events: []
+      event: {}
     }
   }
 
   componentDidMount () {
-    getEvents()
+    getEvent()
       .then(events => {
-        this.setState({events})
+        this.setState({event})
       })
   }
 
   render () {
     return (
-      <div className='events'>
-        <h3>Events</h3>
+      <div className='event'>
+        <h3>{event.name}</h3>
         <ul>
           {this.state.events.map(event => {
             return <li key={event.id}>{event.name} {event.start_date} {event.end_date} {event.location}</li>
@@ -30,4 +30,4 @@ class Events extends React.Component {
   }
 }
 
-export default Events
+export default Event
