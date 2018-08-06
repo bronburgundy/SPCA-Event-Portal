@@ -1,6 +1,6 @@
 # SPCA-EVENT-PORTAL
 
-An online portal for the New Zealand SPCA and it's volunteers to aid with event rostering.
+An online portal for the New Zealand SPCA and it's volunteers to aid with event organising and volunteer rostering/contacting.
 
 ## Install
 To get started, follow the below:
@@ -19,7 +19,7 @@ The two main users are:
 
 MVP consists of the following pages:
 
-1. Home/login => /
+1. Home/login => `/`
 2. Events (contains ViewEvents, AddEvent) => `/events`
 3. Event (contains EditEvent) => `/events/xxx_event`
 4. Event Volunteers (contains ViewVolunteers, AddVolunteer, EditVolunteer) `events/xxx_event/volunteers`
@@ -49,6 +49,7 @@ Ideal domain name: www.spcavolunteer.nz
 8. As the SPCA coordinator I need to be able to upload new volunteers and alert ACs when I have done this
 
 9. As the SPCA coordinator I need to be able to check on the progress of all the ACs in confirming their final roster
+
 
 
 ## PROCESS:
