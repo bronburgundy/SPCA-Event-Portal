@@ -6,14 +6,14 @@ const db = knex(config)
 // var moment = require('moment')
 
 module.exports = {
-  getAllVolunteers,
+  getVolunteers,
   getVolunteer,
   editVolunteer,
   // addVolunteer,
   deleteVolunteer
 }
 
-function getAllVolunteers () {
+function getVolunteers () {
   return db('volunteers').select()
 }
 

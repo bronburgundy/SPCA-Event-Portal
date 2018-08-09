@@ -62,7 +62,7 @@ const getVolunteers = () => {
     })
 }
 
-export {
+module.exports = {
   getEvents,
   getEvent,
   addEvent,

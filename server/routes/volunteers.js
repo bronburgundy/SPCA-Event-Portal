@@ -5,7 +5,7 @@ const db = require('../db/db')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  db.getAllVolunteers()
+  db.getVolunteers()
     .then(volunteers => {
       res.json(volunteers)
     })
