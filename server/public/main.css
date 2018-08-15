@@ -12,7 +12,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 html, body {
   background-color:white;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -120,6 +120,7 @@ h2 {
 
 .banner p {
   margin: 40px;
+  line-height: 1.5rem;
 }
 
 #banner-button {
