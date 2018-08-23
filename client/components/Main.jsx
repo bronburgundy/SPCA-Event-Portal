@@ -8,12 +8,10 @@ export const Main = () => {
   return (
     <Router>
       <div className='main'>
-        <Route path='/events' component={Events} />
+        <Route path='/' component={Events} />
         <Route path='/events/:id' component={Event} />
         <Route path='/events/:id/Volunteers' component={Volunteers} />
       </div>
     </Router>
   )
 }
-
-export default Main

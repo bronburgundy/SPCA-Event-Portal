@@ -2,8 +2,8 @@ import React from 'react'
 import {getEvents} from '../apiClient'
 
 class Events extends React.Component {
-  constructor (props) {
-    super(props)
+  constructor () {
+    super()
     this.state = {
       events: []
     }

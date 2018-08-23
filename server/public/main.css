@@ -6,7 +6,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 * {
   box-sizing: border-box;
-  /* border: 0.2px solid red; */
+  border: 0.2px solid red;
 }
 
 
@@ -18,7 +18,8 @@ html, body {
   padding: 0;
 }
 
-.container-fluid {
+.container {
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -129,6 +130,7 @@ h2 {
   height: 10%;
   color: white;
   background-color: #97065a;
+  font-size: 1rem;
   font-family: 'Arial Rounded MT Bold', Arial, Helvetica, sans-serif;
   border-radius: 5px;
 }
@@ -137,12 +139,20 @@ h2 {
 
 .main {
   position: relative;
+  top: 0;
   height: 700px;
   background-color: #0070bb;
 }
 
-.main-content {
-  position: absolute;
+h3 {
+  margin: 40px;
+}
+
+/* EVENTS */
+
+.events {
+  position: relative;
+  text-align: left;
   height: 90%;
   width: 90%;
   top: 5%;
@@ -152,19 +162,13 @@ h2 {
   box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.28);
 }
 
-h3 {
-  margin: 40px;
-}
-
-.main-content ul {
-  width: 100%;
-  margin: auto;
+.events ul {
   list-style: none;
-  justify-content: space-between;
 }
 
-
-
+.events li {
+  margin: 10px 0;
+}
 
 /* FOOTER */
 
