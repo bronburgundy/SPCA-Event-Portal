@@ -6,7 +6,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 * {
   box-sizing: border-box;
-  border: 0.2px solid red;
+  border: 0.1px solid red;
 }
 
 
@@ -174,15 +174,55 @@ h3 {
   margin: 10px 0;
 }
 
+.events img {
+  border-radius: 5px;
+}
+
+.event {
+  position: relative;
+}
+
+.event-location {
+  position: absolute;
+  top: 1rem;
+  left: -1rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  background-color: #0070bb;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
 /* FOOTER */
 
 .footer {
-  display: flex;
-  height: 80px;
-  width: 90%;
   position: relative;
+  display: flex;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
+  color: grey;
+  font-size: 0.9rem;
+}
+
+.footer-left {
+  margin-top: 1rem;
+  width: 40%;
+}
+
+.footer-right {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-logo {
+  width: 80px;
+  margin-top: 1.5rem;
 }
 
 .footer p {

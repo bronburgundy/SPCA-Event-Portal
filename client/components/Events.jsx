@@ -19,7 +19,7 @@ class Events extends React.Component {
   render () {
     return (
       <div className='events'>
-        <h3>Events</h3>
+        <h2>Events</h2>
         <ul>
           {this.state.events.map(event => {
             return (
