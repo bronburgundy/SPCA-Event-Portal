@@ -162,7 +162,12 @@ h3 {
 }
 
 .events ul {
+  width: 93%;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .events li {

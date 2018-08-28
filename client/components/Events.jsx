@@ -22,7 +22,14 @@ class Events extends React.Component {
         <h3>Events</h3>
         <ul>
           {this.state.events.map(event => {
-            return <li key={event.id} className='event-info'>{event.image} {event.location} <h3>{event.name}</h3> {event.start_date} {event.end_date} </li>
+            return (
+              <li key={event.id} className='event'>
+                <img className='event-image' src={event.image} alt=""/><br />
+                <span className='event-location'>{event.location}</span>
+                <h4>{event.name}</h4>
+                <span className='event-date'>{event.start_date}</span>
+              </li>
+            )
           })}
         </ul>
       </div>
