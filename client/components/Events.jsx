@@ -27,7 +27,7 @@ class Events extends React.Component {
                 <img className='event-image' src={event.image} alt=""/><br />
                 <span className='event-location'>{event.location}</span>
                 <h4>{event.name}</h4>
-                <span className='event-date'>{event.start_date}</span>
+                <span className='event-date'>{event.start_date} {event.end_date}</span>
               </li>
             )
           })}

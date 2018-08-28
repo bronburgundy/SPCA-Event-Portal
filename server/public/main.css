@@ -175,7 +175,11 @@ h3 {
 }
 
 .events img {
-  border-radius: 5px;
+  border-radius: 10px;
+}
+
+.events h4 {
+  margin-bottom: 0.8rem;
 }
 
 .event {
@@ -187,12 +191,12 @@ h3 {
   top: 1rem;
   left: -1rem;
   text-transform: uppercase;
-  font-weight: 800;
-  font-size: 0.8rem;
+  font-weight: 700;
+  font-size: 0.9rem;
   letter-spacing: 0.1rem;
   background-color: #0070bb;
   color: white;
-  padding: 6px 10px;
+  padding: 10px 16px;
   border-radius: 5px;
 }
 
