@@ -11,7 +11,7 @@ class Event extends React.Component {
 
   componentDidMount () {
     getEvent()
-      .then(events => {
+      .then(event => {
         this.setState({event})
       })
   }
@@ -19,12 +19,12 @@ class Event extends React.Component {
   render () {
     return (
       <div className='event'>
-        <h3>{event.name}</h3>
-        <ul>
+        <h2>{event.name}</h2>
+        <div className='event-info'>
           {this.state.events.map(event => {
             return <li key={event.id}>{event.name} {event.start_date} {event.end_date} {event.location}</li>
           })}
-        </ul>
+        </div>
       </div>
     )
   }

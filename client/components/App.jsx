@@ -12,7 +12,7 @@ const App = () => {
     <Router>
       <div className='container'>
         <Route path='/' component={Header} />
-        <Route path='/' component={Banner} />
+        <Route exact path='/' component={Banner} />
         <Route exact path='/' component={Main} />
         {/* <Route path='/' component={Login} />
         <WaitIndicator /> */}
