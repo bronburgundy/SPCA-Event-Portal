@@ -6,6 +6,11 @@ class EventInfoEdit extends React.Component {
   constructor () {
     super()
     this.state = {
+      name: '',
+      start_date: '',
+      end_date: '',
+      location: '',
+      image: ''
     }
   }
 
