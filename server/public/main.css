@@ -6,7 +6,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 * {
   box-sizing: border-box;
-  /* border: 0.2px solid red; */
+  border: 0.1px solid red;
 }
 
 
@@ -18,7 +18,8 @@ html, body {
   padding: 0;
 }
 
-.container-fluid {
+.container {
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -129,6 +130,7 @@ h2 {
   height: 10%;
   color: white;
   background-color: #97065a;
+  font-size: 1rem;
   font-family: 'Arial Rounded MT Bold', Arial, Helvetica, sans-serif;
   border-radius: 5px;
 }
@@ -137,44 +139,94 @@ h2 {
 
 .main {
   position: relative;
+  top: 0;
   height: 700px;
   background-color: #0070bb;
-}
-
-.main-content {
-  position: absolute;
-  height: 90%;
-  width: 90%;
-  top: 5%;
-  left: 5%;
-  border-radius: 5px;
-  background-color: #dddddd;
-  box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.28);
 }
 
 h3 {
   margin: 40px;
 }
 
-.main-content ul {
-  width: 100%;
-  margin: auto;
+/* EVENTS */
+
+.events {
+  position: relative;
+  text-align: left;
+  height: 90%;
+  width: 90%;
+  top: 5%;
+  left: 5%;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.events ul {
+  width: 93%;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
+  display: flex;
   justify-content: space-between;
 }
 
+.events li {
+  margin: 10px 0;
+}
 
+.events img {
+  border-radius: 10px;
+}
 
+.events h4 {
+  margin-bottom: 0.8rem;
+}
+
+.event {
+  position: relative;
+}
+
+.event-location {
+  position: absolute;
+  top: 1rem;
+  left: -1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background-color: #0070bb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 5px;
+}
 
 /* FOOTER */
 
 .footer {
-  display: flex;
-  height: 80px;
-  width: 90%;
   position: relative;
+  display: flex;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
+  color: grey;
+  font-size: 0.9rem;
+}
+
+.footer-left {
+  margin-top: 1rem;
+  width: 40%;
+}
+
+.footer-right {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-logo {
+  width: 80px;
+  margin-top: 1.5rem;
 }
 
 .footer p {

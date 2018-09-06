@@ -2,8 +2,8 @@ import React from 'react'
 import {getEvents} from '../apiClient'
 
 class Events extends React.Component {
-  constructor (props) {
-    super(props)
+  constructor () {
+    super()
     this.state = {
       events: []
     }
@@ -19,10 +19,17 @@ class Events extends React.Component {
   render () {
     return (
       <div className='events'>
-        <h3>Events</h3>
+        <h2>Events</h2>
         <ul>
           {this.state.events.map(event => {
-            return <li key={event.id}>{event.name} {event.start_date} {event.end_date} {event.location}</li>
+            return (
+              <li key={event.id} className='event'>
+                <img className='event-image' src={event.image} alt=""/><br />
+                <span className='event-location'>{event.location}</span>
+                <h4>{event.name}</h4>
+                <span className='event-date'>{event.start_date} {event.end_date}</span>
+              </li>
+            )
           })}
         </ul>
       </div>

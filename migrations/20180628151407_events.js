@@ -5,6 +5,7 @@ exports.up = (knex, Promise) => {
     table.date('start_date')
     table.date('end_date')
     table.string('location')
+    table.string('image')
   })
 }
 
