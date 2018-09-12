@@ -11,11 +11,11 @@ const Event = () => {
     <Router>
       <div className='event'>
         <Switch>
-          <Route path='/:id' component={EventInfo} />
+          <Route path='/events/:id' component={EventInfo} />
           <Route path='/:id/edit' component={EventInfoEdit} />
         </Switch>
-        <Route exact path='/:id' component={Volunteers} />
-        <Route exact path='/:id' component={Volunteer} />
+        <Route exact path='events/:id' component={Volunteers} />
+        <Route exact path='events/:id' component={Volunteer} />
       </div>
     </Router>
   )
