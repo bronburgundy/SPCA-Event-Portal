@@ -10,14 +10,14 @@ class EventInfo extends React.Component {
   }
 
   componentDidMount () {
-    getEvent()
+    const id = Number(this.props.match.params.id)
+    getEvent(id)
       .then(event => {
         this.setState({event})
       })
   }
 
   render () {
-    const id = Number(this.props.match.params.id)
     return (
       <div className='event'>
         <h2>{this.props.event.name}</h2>
