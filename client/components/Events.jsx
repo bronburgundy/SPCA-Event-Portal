@@ -1,5 +1,6 @@
 import React from 'react'
 import {getEvents} from '../apiClient'
+import {Link} from 'react-router-dom'
 
 class Events extends React.Component {
   constructor () {
@@ -23,12 +24,14 @@ class Events extends React.Component {
         <ul>
           {this.state.events.map(event => {
             return (
-              <li key={event.id} className='event'>
-                <img className='event-image' src={event.image} alt=""/><br />
-                <span className='event-location'>{event.location}</span>
-                <h4>{event.name}</h4>
-                <span className='event-date'>{event.start_date} {event.end_date}</span>
-              </li>
+              <Link to={`/events/${event.id}`}>
+                <li key={event.id} className='event'>
+                  <img className='event-image' src={event.image} alt=""/><br />
+                  <span className='event-location'>{event.location}</span>
+                  <h4>{event.name}</h4>
+                  <span className='event-date'>{event.start_date} {event.end_date}</span>
+                </li>
+              </Link>
             )
           })}
         </ul>
