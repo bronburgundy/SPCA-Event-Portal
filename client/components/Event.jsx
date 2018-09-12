@@ -3,6 +3,8 @@ import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 import {EventInfo} from './EventInfo'
 import {EventInfoEdit} from './EventInfoEdit'
 import {Volunteers} from './Volunteers'
+import {Volunteer} from './Volunteer'
+
 
 const Event = () => {
   return (
@@ -13,6 +15,7 @@ const Event = () => {
           <Route path='/:id/edit' component={EventInfoEdit} />
         </Switch>
         <Route exact path='/:id' component={Volunteers} />
+        <Route exact path='/:id' component={Volunteer} />
       </div>
     </Router>
   )

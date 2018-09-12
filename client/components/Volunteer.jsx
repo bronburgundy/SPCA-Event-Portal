@@ -15,7 +15,6 @@ class Volunteer extends React.Component {
                 <div>
                     <h4>{this.props.id} </h4>
                     
-                    
 
                 </div>
 
@@ -24,4 +23,4 @@ class Volunteer extends React.Component {
     }
 }
 
-export const Volunteer
+export default Volunteer
