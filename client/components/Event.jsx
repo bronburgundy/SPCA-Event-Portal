@@ -12,7 +12,7 @@ const Event = () => {
           <Route path='/:id' component={EventInfo} />
           <Route path='/:id/edit' component={EventInfoEdit} />
         </Switch>
-        <Route exact path='/:id' component={Volunteers} />
+        <Volunteers />
       </div>
     </Router>
   )
