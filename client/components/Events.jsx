@@ -24,14 +24,14 @@ class Events extends React.Component {
         <ul>
           {this.state.events.map(event => {
             return (
-              <Link to={`/events/${event.id}`}>
-                <li key={event.id} className='event'>
+              <li key={event.id} className='event'>
+                <Link to={`/events/${event.id}`}>
                   <img className='event-image' src={event.image} alt=""/><br />
                   <span className='event-location'>{event.location}</span>
                   <h4>{event.name}</h4>
                   <span className='event-date'>{event.start_date} {event.end_date}</span>
-                </li>
-              </Link>
+                </Link>
+              </li>
             )
           })}
         </ul>
