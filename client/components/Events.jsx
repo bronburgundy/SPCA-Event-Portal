@@ -24,8 +24,8 @@ class Events extends React.Component {
         <ul>
           {this.state.events.map(event => {
             return (
-              <Link to={`/events/${event.id}`}>
-                <li key={event.id} className='event'>
+              <Link key={event.id} to={`/events/${event.id}`}>
+                <li className='event'>
                   <img className='event-image' src={event.image} alt=""/><br />
                   <span className='event-location'>{event.location}</span>
                   <h4>{event.name}</h4>
