@@ -11,7 +11,7 @@ class EventInfo extends React.Component {
 
   componentDidMount () {
     const id = Number(this.props.match.params.id)
-    getEvent(id)
+    this.props.getEvent(id)
       .then(event => {
         this.setState({event})
       })
@@ -20,9 +20,12 @@ class EventInfo extends React.Component {
   render () {
     return (
       <div className='event'>
-        <h2>{this.props.event.name}</h2>
-        <p>Dates: {this.props.event.start_date} {this.props.event.end_date}</p>
-        <p>Location: {this.props.event.location}</p>
+        {this.props.event &&
+        <div>
+          <h2>{this.props.event.name}</h2>
+          <p>Dates: {this.props.event.start_date} {this.props.event.end_date}</p>
+          <p>Location: {this.props.event.location}</p>
+        </div>}
       </div>
     )
   }

@@ -8,7 +8,7 @@ import Volunteer from './Volunteer'
 const Event = () => {
   return (
     <Router>
-      <div className='event'>
+      <div className='eventInfo'>
         {/* <Switch> */}
         <Route exact path='/events/:id' component={EventInfo} />
         {/* <Route path='/events/:id/edit' component={EventInfoEdit} />
