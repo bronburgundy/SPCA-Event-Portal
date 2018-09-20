@@ -13,9 +13,9 @@ const getEvents = () => {
     })
 }
 
-const getEvent = () => {
+const getEvent = (id) => {
   return request
-    .get('/api/v1/events/:id')
+    .get('/api/v1/events/'+id)
     .then(res => {
       return res.body
     })
