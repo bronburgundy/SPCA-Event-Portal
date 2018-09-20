@@ -20,9 +20,9 @@ class EventInfo extends React.Component {
   render () {
     return (
       <div className='event'>
-        <h2>{this.props.event.name}</h2>
-        <p>Dates: {this.props.event.start_date} {this.props.event.end_date}</p>
-        <p>Location: {this.props.event.location}</p>
+        <h2>{this.state.event.name}</h2>
+        <p>Dates: {this.state.event.start_date} {this.state.event.end_date}</p>
+        <p>Location: {this.state.event.location}</p>
       </div>
     )
   }
