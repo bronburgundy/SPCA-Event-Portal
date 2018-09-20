@@ -53,7 +53,7 @@ const deleteEvent = (eventId) => {
 
 const getVolunteers = () => {
   return request
-    .get('/api/v1/events/:id/volunteers')
+    .get('/api/v1/events/:id')
     .then(res => {
       return res.body
     })

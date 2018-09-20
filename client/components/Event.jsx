@@ -5,7 +5,6 @@ import {EventInfoEdit} from './EventInfoEdit'
 import {Volunteers} from './Volunteers'
 import {Volunteer} from './Volunteer'
 
-
 const Event = () => {
   return (
     <Router>

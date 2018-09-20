@@ -21,7 +21,8 @@ class EventInfo extends React.Component {
     return (
       <div className='event'>
         <h2>{this.state.event.name}</h2>
-        <p>Dates: {this.state.event.start_date} {this.state.event.end_date}</p>
+        <img className='event-info-image' src={this.state.event.image} alt=""/>
+        <p>Date(s): {this.state.event.start_date} {this.state.event.end_date}</p>
         <p>Location: {this.state.event.location}</p>
       </div>
     )
