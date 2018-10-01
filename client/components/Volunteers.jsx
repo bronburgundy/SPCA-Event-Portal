@@ -10,7 +10,8 @@ class Volunteers extends React.Component {
   }
 
   componentDidMount () {
-    getVolunteers()
+    const id = this.props.match.params.id
+    getVolunteers(id)
       .then(volunteers => {
         this.setState({volunteers})
       })

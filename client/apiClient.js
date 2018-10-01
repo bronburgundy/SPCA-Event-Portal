@@ -15,7 +15,7 @@ const getEvents = () => {
 
 const getEvent = (id) => {
   return request
-    .get('/api/v1/events/'+id)
+    .get('/api/v1/events/' + id)
     .then(res => {
       return res.body
     })
@@ -51,9 +51,9 @@ const deleteEvent = (eventId) => {
     })
 }
 
-const getVolunteers = () => {
+const getVolunteers = (id) => {
   return request
-    .get('/api/v1/events/:id/volunteers')
+    .get(`/api/v1/events/${id}/volunteers`)
     .then(res => {
       return res.body
     })
