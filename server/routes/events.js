@@ -80,4 +80,16 @@ router.delete('/:id', (req, res) => {
     })
 })
 
+router.get('/:id/volunteers', (req, res) => {
+  const id = Number(req.params.id)
+  db.getVolunteersByEvent(id)
+    .then(volunteers => {
+      res.json(volunteers)
+    })
+    .catch(err => {
+    // eslint-disable-next-line no-console
+      console.error(err)
+      res.status(500).send('Unable to get volunteer details')
+    })
+})
 module.exports = router

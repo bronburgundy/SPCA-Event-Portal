@@ -14,6 +14,6 @@ server.use(express.static(path.join(__dirname, './public')))
 
 server.use('/api/v1/auth', authRoute)
 server.use('/api/v1/events', eventsRoute) // Matches URL to route file
-server.use('/api/v1/volunteers', volunteersRoute)
+server.use('/api/v1/events/:id/volunteers', volunteersRoute)
 
 module.exports = server

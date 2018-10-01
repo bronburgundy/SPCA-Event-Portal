@@ -4,6 +4,7 @@ const db = require('../db/volunteers')
 
 const router = express.Router()
 
+// moved to events, as events/id/volunteers
 router.get('/', (req, res) => {
   db.getVolunteers()
     .then(volunteers => {

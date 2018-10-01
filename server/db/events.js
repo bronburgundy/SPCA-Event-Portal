@@ -12,7 +12,8 @@ module.exports = {
   addEvent,
   deleteEvent,
   EventExists,
-  createEvent
+  createEvent,
+  getVolunteersByEvent
 }
 
 function getEvents () {
@@ -58,4 +59,10 @@ function createEvent (name, startDate, endDate, location, conn) {
       endDate,
       location
     })
+}
+function getVolunteersByEvent (id) {
+  return db('event_times')
+    .where('event_id', id)
+    .join('volunteer_times', 'event_times.id', 'volunteer_times.event_time_id')
+    .join('volunteers', 'volunteer_times.volunteer_id', 'volunteers.id')
 }
