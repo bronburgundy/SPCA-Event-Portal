@@ -63,6 +63,7 @@ function createEvent (name, startDate, endDate, location, conn) {
 function getVolunteersByEvent (id) {
   return db('event_times')
     .where('event_id', id)
-    .join('volunteer_times', 'event_times.id', 'volunteer_times.event_time_id')
+    .join('volunteer_times', 'volunteer_times.event_time_id', 'event_times.id')
     .join('volunteers', 'volunteer_times.volunteer_id', 'volunteers.id')
+    .select('first_name')
 }
