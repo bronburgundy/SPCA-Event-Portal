@@ -22,7 +22,9 @@ class Volunteers extends React.Component {
         <h3>Volunteers</h3>
         <ul>
           {this.state.volunteers.map(volunteer => {
-            return <li key={volunteer.id}>{volunteer.first_name} {volunteer.last_name} {volunteer.phone} {volunteer.email} {volunteer.dob} {volunteer.gender}</li>
+            return (
+              <li key={volunteer.id}>{volunteer.first_name} {volunteer.last_name} {volunteer.phone}</li>
+            )
           })}
         </ul>
       </div>
